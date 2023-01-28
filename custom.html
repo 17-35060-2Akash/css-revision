@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Property</title>
+    <style>
+        :root {
+            --main-color: orange;
+            --border-color: red;
+        }
+
+        h1 {
+            color: var(--main-color);
+        }
+
+        p {
+            color: var(--main-color);
+        }
+
+        h2 {
+            border: 2px solid var(--border-color);
+            color: var(--main-color);
+        }
+
+        h6 {
+            background-color: var(--main-color);
+        }
+
+        footer {
+            clear: both;
+            color: var(--main-color);
+        }
+
+        .side-nav,
+        .blogs {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>I am exploring custom property</h1>
+        <p>Welcome to my website</p>
+    </header>
+    <main>
+        <h2>My awsome conenet</h2>
+        <h6>my tiny heading</h6>
+        <section>
+            <aside class="side-nav">
+                my side navigation
+            </aside>
+            <div class="blogs">
+                <h4>Blogs</h4>
+            </div>
+        </section>
+
+        <select>
+            <option value="">CSE</option>
+            <option value="">EEE</option>
+            <option value="">ARCHI</option>
+            <option selected value="">ENG</option>
+        </select>
+    </main>
+    <footer>
+        <p><small>copyright</small></p>
+    </footer>
+
+</body>
+
+</html>
